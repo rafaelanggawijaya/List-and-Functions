@@ -22,8 +22,8 @@ def pickup():
 
 
 def calccost():
-    hours = int(input("How many hours has your child/s been here?: "))
-    child_count = int(input("How many children do you wish to pick up?: "))
+    hours = int(input("How many hours has the child/ren been here?: "))
+    child_count = len(roll)
     print(f"Your cost is ${hours * child_count * 12} ")
 
 
