@@ -4,9 +4,9 @@ auction_item = input("What is the auction for?:")
 reserve_price = float(input("What is the reserve price?:"))
 print(f"The auction for {auction_item} has started!\n")
 while True:
-    print(f"The Highest bid right now is ${bid}")
+    print(f"The Highest bid right now is ${bid}\n")
     bidder = round(float(input("What is your bid (-1 to exit auction): "
-                         "$")), 2)
+                         "$\n")), 2)
     if bidder < 0:
         break
     elif bid < bidder:
