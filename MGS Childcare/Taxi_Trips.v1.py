@@ -1,3 +1,21 @@
+def float_checker(question):
+    error = "\nSorry, you must enter an integer\n"
+
+    number = ""
+
+    while not number:
+
+        try:
+
+            number = float(input(question))
+
+            return number
+
+        except ValueError:
+
+            print(error)
+
+
 num_trip = 0
 total_cost_list = []
 times = []
@@ -7,7 +25,7 @@ while True:
     trip = input("Start new Trip (y/n):")
     if trip == "y" or trip == "Y":
         num_trip += 1
-        time = float(input("How long is this trip (in minutes):"))
+        time = float_checker("How long is this trip (in minutes):")
         cost = 10 + 2 * time
         times.append(time)
         total_cost_list.append(cost)
