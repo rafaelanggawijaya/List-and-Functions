@@ -18,9 +18,6 @@ most_absent_days = max([worker[1] for worker in workers_list])
 most_abs = [worker for worker in workers_list if worker[1] == most_absent_days]
 
 
-
-
-
 def avg_num_days(lst):
     total = 0
     staff_amt = int(len(lst))
@@ -28,7 +25,6 @@ def avg_num_days(lst):
         total += staff[1]
     avg = total / staff_amt
     return avg
-
 
 
 average = round(avg_num_days(workers_list), 2)
